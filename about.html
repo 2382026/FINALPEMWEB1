@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="favicons.png" type="image/png">
+    <title>About Oceiy</title>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+        }
+
+        #nav-menu.fade-in {
+            animation: fadeIn 0.4s ease-in-out forwards;
+        }
+
+        #nav-menu.fade-out {
+            animation: fadeOut 0.4s ease-in-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+  <!-- Header -->
+  <header class="bg-[#D69B00] text-white shadow-md">
+    <div class="container mx-auto px-4 py-2 flex items-center justify-between">
+      <div class="flex items-center">
+        <img src="favicons.png" alt="Site Logo" class="h-12 w-12 rounded-full mr-3">
+        <h1 class="text-2xl font-bold">About My Portofolio</h1>
+      </div>
+      <!-- Hamburger Button -->
+      <button id="hamburger" class="block md:hidden p-2 text-white">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+      <!-- Navigation Menu -->
+      <nav id="nav-menu" class="hidden md:flex md:space-x-4 flex-col md:flex-row absolute md:static top-14 left-0 md:top-auto md:left-auto w-full md:w-auto bg-[#D69B00] md:bg-transparent shadow-md md:shadow-none z-10">
+        <ul class="md:flex-row md:items-center flex flex-col md:space-x-4 text-center">
+          <li><a href="index.html" class="block py-2 md:py-0 text-white hover:text-gray-300 transition">Home</a></li>
+          <li><a href="about.html" class="block py-2 md:py-0 text-white hover:text-gray-300 transition">About</a></li>
+          <li><a href="projects.html" class="block py-2 md:py-0 text-white hover:text-gray-300 transition">Projects</a></li>
+          <li><a href="calculator.html" class="block py-2 md:py-0 text-white hover:text-gray-300 transition">Calculator</a></li>
+          <li><a href="registration.html" class="block py-2 md:py-0 text-white hover:text-gray-300 transition">Registration</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main class="container mx-auto py-12 px-6">
+    <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+    <h2 class="text-3xl font-bold text-center mb-4">About Me</h2>
+    <div class="flex items-center justify-center space-x-6">
+        <img src="about.jpg" alt="Rose Valencia Siahaan" class="w-32 h-32 rounded-full object-cover">
+        <p class="text-gray-700 leading-relaxed">
+            Hello everyone! my name is <strong>Rose Valencia Siahaan</strong> and I am 19 years, 9 months, 14 day, 19 hours old (I made this on 03/12/2024, at 19.47 in my bedroom). This time, I will share about my origins. I am from Cikampek, West Java. I have two siblings, consisting of two girls, including myself, and one boy. I am the eldest child in my family (the hope of the family). Thank God I have both parents who are still together, and since both of my parents come from Adventist families, I was born an Adventist from the womb.
+        </p>
+    </div>
+</section>
+
+
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+        <!-- Biodata Section -->
+        <div class="bg-gray-50 rounded-lg shadow-md p-6">
+            <h3 class="text-2xl font-semibold mb-4">Biodata</h3>
+            <ul class="list-disc list-inside text-gray-700">
+                <li><strong>Nickname:</strong> Oce / Valen / Rose</li>
+                <li><strong>Place and Date of Birth:</strong> Karawang, 27 February 2005</li>
+                <li><strong>Nationality:</strong> Indonesian</li>
+            </ul>
+        </div>
+
+        <!-- Hobbies Section -->
+        <div class="bg-gray-50 rounded-lg shadow-md p-6">
+            <h3 class="text-2xl font-semibold mb-4">Hobbies</h3>
+            <p class="text-gray-700">Here are some of my favorite activities:</p>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>Watching Movies</li>
+                <li>Playing Badminton</li>
+                <li>Cleaning the House</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h3 class="text-2xl font-semibold mb-4">Education</h3>
+        <ul class="list-decimal list-inside text-gray-700">
+            <li><strong>2010 - 2011:</strong> Kindergarten School</li>
+            <li><strong>2011 - 2018:</strong> Elementary School Balonggandu 2</li>
+            <li><strong>2018 - 2020:</strong> Junior High School 1 Jatisari</li>
+            <li><strong>2020 - 2023:</strong> Senior High School 1 Jatisari</li>
+        </ul>
+    </section>
+
+    <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h3 class="text-2xl font-semibold mb-4">Experiences</h3>
+            <ul class="list-disc list-inside text-gray-700">
+                <li> I participated in basketball extracurriculars in middle school and high school</li>
+                <li> I was on the school bazaar committee</li>
+                <li> I was on the graduation committee of my class</li>
+                <li> I was the Music Department Coordinator at the Church</li>
+                <li> I was once the treasurer of Adventist Youth Region 17</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h3 class="text-2xl font-semibold mb-4">Goals</h3>
+            <ul class="list-disc list-inside text-gray-700">
+            <p> My goals in semester 3 is that I can be better at managing my time, previously I had difficulty managing my time and preferred to relax. I'm sure this semester can be better again and again. and also I want to deepen my interests and talents this semester so that I can easily do anything that suits my interests, so far there aren't any but I'm sure I can find them.
+            </p>
+            </ul>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="bg-gray-50 rounded-lg shadow-md p-6">
+        <h3 class="text-2xl font-semibold mb-4">My Social Media</h3>
+        <ul class="flex space-x-6 justify-center">
+            <li>
+                <a href="https://www.facebook.com/rose.valencia.3532?mibextid=ZbWKwL" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" class="w-8 h-8">
+                </a>
+            </li>
+            <li>
+                <a href="https://instagram.com/valenggln" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" class="w-8 h-8">
+                </a>
+            </li>
+            <li>
+                <a href="http://www.youtube.com/@aaceilnv" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Logo" class="w-8 h-8">
+                </a>
+            </li>
+        </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#2E4A2F] text-white text-center py-4">
+    <p>&copy; 2024 Rose Valencia Siahaan. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      if (navMenu.classList.contains('hidden')) {
+        navMenu.classList.remove('hidden', 'fade-out');
+        navMenu.classList.add('fade-in');
+      } else {
+        navMenu.classList.remove('fade-in');
+        navMenu.classList.add('fade-out');
+        setTimeout(() => {
+          navMenu.classList.add('hidden');
+        }, 400); // Sesuaikan dengan durasi animasi fade-out
+      }
+    });
+  </script>
+</body>
+</html>

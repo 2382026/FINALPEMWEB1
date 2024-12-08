@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Business Analyst</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="favicons.png" type="image/png">
+  <style>
+    /* Overlay styling */
+    .project-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    .project-card img {
+      transition: transform 0.3s, filter 0.3s;
+    }
+
+    .project-card:hover img {
+      transform: scale(1.1);
+      filter: blur(2px) brightness(0.5);
+    }
+
+    .project-card .description {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s;
+      font-size: 1rem;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 5px;
+    }
+
+    .project-card:hover .description {
+      opacity: 1;
+    }
+
+    /* Fade-in and fade-out animations for nav-menu */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      to {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+    }
+
+    #nav-menu.fade-in {
+      animation: fadeIn 0.4s ease-in-out forwards;
+    }
+
+    #nav-menu.fade-out {
+      animation: fadeOut 0.4s ease-in-out forwards;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+  <!-- Header -->
+  <header class="bg-[#D69B00] text-white shadow-md">
+    <div class="container mx-auto px-4 py-2 flex items-center justify-between">
+      <div class="flex items-center">
+        <img src="favicons.png" alt="Site Logo" class="h-12 w-12 rounded-full mr-3">
+        <h1 class="text-2xl font-bold">Business Analyst Portfolio</h1>
+      </div>
+      <button id="hamburger" class="block md:hidden p-2 text-white">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+      <nav id="nav-menu" class="hidden md:flex md:space-x-4 flex-col md:flex-row absolute md:static top-14 left-0 md:top-auto md:left-auto w-full md:w-auto bg-[#D69B00] md:bg-transparent shadow-md md:shadow-none z-10">
+        <ul class="md:flex-row md:items-center flex flex-col md:space-x-4 text-center">
+          <li><a href="index.html" class="block py-2 md:py-0 text-white hover:text-gray-300 transition">Home</a></li>
+          <li><a href="about.html" class="block py-2 md:py-0 text-white hover:text-gray-300 transition">About</a></li>
+          <li><a href="projects.html" class="block py-2 md:py-0 text-white hover:text-gray-300 transition">Projects</a></li>
+          <li><a href="calculator.html" class="block py-2 md:py-0 text-white hover:text-gray-300 transition">Calculator</a></li>
+          <li><a href="registration.html" class="block py-2 md:py-0 text-white hover:text-gray-300 transition">Registration</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8 text-[#D69B00]">What does a business analyst do?</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Repeatable Project Card -->
+        <div class="project-card">
+          <img src="projects1.jpg" alt="Project 1" class="w-full h-48 object-cover">
+          <div class="description">Leading brainstorming sessions with stakeholders to gather business needs and explore potential solutions.</div>
+        </div>
+        <div class="project-card">
+          <img src="projects2.jpg" alt="Project 2" class="w-full h-48 object-cover">
+          <div class="description">Creating and reviewing user flow diagrams on a whiteboard to identify process steps and optimize workflows.</div>
+        </div>
+        <div class="project-card">
+          <img src="projects3.jpg" alt="Project 3" class="w-full h-48 object-cover">
+          <div class="description">Hosting direct interviews with stakeholders to gather functional and non-functional requirements.</div>
+        </div>
+        <div class="project-card">
+          <img src="projects4.jpg" alt="Project 4" class="w-full h-48 object-cover">
+          <div class="description">Using tools like Power BI or Tableau to present data insights that support informed decision-making.</div>
+        </div>
+        <div class="project-card">
+          <img src="projects5.jpg" alt="Project 5" class="w-full h-48 object-cover">
+          <div class="description">Writing Business Requirements Documents (BRD) and Functional Specifications with clarity and structure.</div>
+        </div>
+        <div class="project-card">
+          <img src="projects6.jpg" alt="Project 6" class="w-full h-48 object-cover">
+          <div class="description">Collaborating with developers, designers, and QA teams during sprint meetings to ensure the solution aligns with requirements.</div>
+        </div>
+        <div class="project-card">
+          <img src="projects7.jpg" alt="Project 7" class="w-full h-48 object-cover">
+          <div class="description">Mapping customer experiences using sticky notes to identify pain points and opportunities for improvement.</div>
+        </div>
+        <div class="project-card">
+          <img src="projects8.jpg" alt="Project 8" class="w-full h-48 object-cover">
+          <div class="description">Monitoring project KPIs and evaluating success metrics using dashboards.</div>
+        </div>
+        <div class="project-card">
+          <img src="projects9.jpg" alt="Project 9" class="w-full h-48 object-cover">
+          <div class="description">Working with clients and end-users to conduct testing and ensure the solution meets business needs.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#2E4A2F] text-white text-center py-4">
+    <p>&copy; 2024 Rose Valencia Siahaan. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      if (navMenu.classList.contains('hidden')) {
+        navMenu.classList.remove('hidden', 'fade-out');
+        navMenu.classList.add('fade-in');
+      } else {
+        navMenu.classList.remove('fade-in');
+        navMenu.classList.add('fade-out');
+        setTimeout(() => {
+          navMenu.classList.add('hidden');
+        }, 400); // Durasi animasi fade-out
+      }
+    });
+  </script>
+</body>
+</html>
